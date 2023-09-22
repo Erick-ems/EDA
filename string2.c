@@ -1,18 +1,21 @@
-/*fa�a um programa que leia uma string e a imprima de tr�s para frente. */
-
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
 int main() {
-	char string[30];
-	int i;
-	
-	gets(string);
-	
-	for (i = strlen(string)-1; i >= 0; i--) printf("%c", string[i]);
-	
-	printf("\n");
-	
-	return 0;
+    char c[100];
+
+    // Remove this line as it's not needed
+    // int tamanho = sizeof(c);
+   
+    // Use %s in scanf to read a string into 'c' without the '&' symbol
+    scanf("%s", c);
+
+    int tamanho = strlen(c); // Calculate the length of the input string
+    
+    for (int i = tamanho - 1; i >= 0; i--) {
+        printf("%c", c[i]); // Use %c to print individual characters
+    }
+    printf("\n");
+
+    return 0;
 }
