@@ -1,0 +1,30 @@
+// Um campo para armazenar dados inteiros
+// Um ponteiro para a próxima célula na lista
+// Inicializa um contador para zero
+// Cria um ponteiro 'current' e o inicia com o início da lista
+// Enquanto 'current' não for nulo (ou seja, há células na lista)
+// Incrementa o contador para cada célula encontrada
+// Armazena o endereço da célula atual em 'temp'
+// Move 'current' para a próxima célula na lista
+// Libera a memória da célula anterior
+// Retorna o número total de células na lista
+// Cria um ponteiro 'head' para a lista e o inicializa como nulo
+// Cria um ponteiro 'second' para a segunda célula e o inicializa como nulo
+// Cria um ponteiro 'third' para a terceira célula e o inicializa como nulo
+// Aloca memória para a primeira célula e atribui o endereço a 'head'
+// Aloca memória para a segunda célula e atribui o endereço a 'second'
+// Aloca memória para a terceira célula e atribui o endereço a 'third'
+// Define o valor de 'data' da primeira célula como 1
+// Define 'next' da primeira célula para apontar para 'second'
+// Define o valor de 'data' da segunda célula como 2
+// Define 'next' da segunda célula para apontar para 'third'
+// Define o valor de 'data' da terceira célula como 3
+// Define 'next' da terceira célula como nulo, indicando o final da lista
+// Chame a função para contar as células
+// Chama a função 'countCellsIterative' com a lista encadeada como argumento
+// Exibe o número de células na lista
+// Libere a memória alocada para as células restantes
+// Libera a memória da primeira célula
+// Libera a memória da segunda célula
+// Libera a memória da terceira célula
+// Retorna 0 para indicar que o programa foi concluído com sucesso
