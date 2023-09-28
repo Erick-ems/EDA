@@ -7,9 +7,9 @@
 // uma variavel do tipo struct  com o nome de NODE
 struct Node{
     int data; // Armazena a parte inteiro da celula
-    struct Node* next: // crio um ponteiro que vai apontar para a proxima posição
+    struct Node* next; // crio um ponteiro que vai apontar para a proxima posição
     // ele contem o nome node porque ele vai apontar para outra celula, da mesma caracteristica de NODE, através do ponteiro NEXT
-}
+};
 
 // aqui eu vou criar um contador de forma iterativa
 // que vai passar os parametros da struct criada 
@@ -29,27 +29,45 @@ int countCellsIterative(struct Node* head){
         // volta pro inicio e verifica se a posição do current é null ou não
     }
 
+
+    return count;
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 int main(){
+
+
+    // criamos 3 celulas para serem contadas
+    // todas definidas como nulo, pois depois irão receber o valor
+    struct Node* head = NULL;
+    struct Node* second = NULL;
+    struct Node* third = NULL;
+
+
+
+    // aqui alocamos memoria para essa cada celula
+    head = (struct Node*)malloc(sizeof(struct Node));
+    second = (struct Node*)malloc(sizeof(struct Node));
+    third = (struct Node*)malloc(sizeof(struct Node));
+
+    // aqui atribuimos o valor e apotamos o endereço da proxima celula
+    head->data = 1;
+    head->next = second;
+
+    head->data = 2;
+    head->next = third;
+
+    head->data = 3;
+    head->next = NULL;
+
+    // chamamos o contador das celulas dada a cabeça como parametro
+    int count = countCellsIterative(head);
+    printf("numero de celulas da coluna %d\n", countCellsIterative);
+
+    free(head);
+    free(second);
+    free(third);
+
 
 
 
