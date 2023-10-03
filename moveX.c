@@ -3,12 +3,12 @@
 #include <stdlib.h>
 
 void troca(char c[], char v[], int tamanho, int i) {
-    if (i < tamanho) {
-        c[i] = v[i];
-        troca(c, v, tamanho, i + 1);
-    }
-    return;
-}
+     if (i < tamanho) {
+         c[i] = v[i];
+         troca(c, v, tamanho, i + 1);
+     }
+     return;
+ }
 
 void moveX(char c[], int tamanho, int i, int lastIndex) {
     char v[101]; // Corrigido para ser um array de caracteres 'char'
