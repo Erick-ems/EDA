@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+
+int parOuImpar(int n){
+  if(n % 2 == 0){
+    return 0;
+  }else {
+    return 1;
+}
+
+
+int calcula(int nPontos, int v[]){
+  if(parOuImpar == 0){
+    
+  }
+}
+
+
+
+int main(void){
+
+  int n;
+  int pontos = pow(2, n) - 1;
+  char v[pontos];
+
+
+  calcula(pontos, v[pontos]);
+
+  return 0;
+}
