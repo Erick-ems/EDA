@@ -13,3 +13,11 @@ long int fibonacci (int n){
 
   return fib_cache[n];
 }
+
+int main() {
+  int n;
+  printf("Digite um número: ");
+  scanf("%d", &n);
+  printf("Fibonacci de %d = %ld\n", n, fibonacci(n));
+  return 0;
+}
